@@ -1,5 +1,6 @@
 Abhinav Krishna Kandukuri PES1UG24CS701
 Vatsal Gupta PES1UG24CS702
+
 Engineering Analysis:
 Isolation Mechanisms
 The runtime achieves isolation using Linux namespaces and filesystem separation. PID namespaces give each container its own process tree, while mount namespaces isolate the filesystem view. Using chroot restricts the container’s root directory so it cannot access host files outside its environment. However, all containers still share the same host kernel, so CPU, memory, and kernel-level resources are globally shared.
